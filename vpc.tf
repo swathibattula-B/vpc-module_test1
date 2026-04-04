@@ -1,6 +1,5 @@
 module "vpc" {
-    source = "git::https://github.com/swathibattula-B/terraform-aws-vpc1.git?ref=main"
-    project = "roboshop"
-    environment = "dev"
-    
+    source = "../terraform-aws-vpc1"
+    project =var.project
+    environment =var.environments
 }
